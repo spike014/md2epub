@@ -1,0 +1,3 @@
+ebooklib
+markdown2
+Pygments
