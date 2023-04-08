@@ -46,7 +46,7 @@ optional arguments:
 ## example
 
 ```
-1. clone a docsify project to `test_project/ddia`
+1. clone a docsify project to `./test_project/ddia`
 
 cd test_project && git clone git@github.com:spike014/ddia.git && cd ..
 
