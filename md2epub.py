@@ -48,7 +48,6 @@ def parse_arg():
     parser.add_argument(
         "--output",
         dest="output",
-        default=".",
         type=str,
         help="output",
     )

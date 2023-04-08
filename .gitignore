@@ -129,3 +129,4 @@ dmypy.json
 .pyre/
 
 ddia-ddia.epub
+.DS_Store
