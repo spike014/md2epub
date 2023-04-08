@@ -45,7 +45,7 @@ optional arguments:
 
 ## example
 
-1. clone a docsify project to `./ddia`
+1. clone a [docsify](https://github.com/docsifyjs/docsify) project
 
 ```
 git clone https://github.com/spike014/ddia.git
