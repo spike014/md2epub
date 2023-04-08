@@ -45,17 +45,21 @@ optional arguments:
 
 ## example
 
-```
-1. clone a docsify project to `./test_project/ddia`
+1. clone a docsify project to `./ddia`
 
-cd test_project && git clone git@github.com:spike014/ddia.git && cd ..
+```
+git clone https://github.com/spike014/ddia.git
+```
 
 2. run script
 
-python3 md2epub.py --project ./test_project/ddia
+```
+python3 md2epub.py --project ./ddia
+```
 
 3. check out the epub file in `pwd` path
 
+```
 ddia-ddia.epub
 ```
 
