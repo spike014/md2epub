@@ -34,10 +34,10 @@ usage: md2epub.py [-h] [--project PROJECT] [--content CONTENT] [--author AUTHOR]
 optional arguments:
   -h, --help            show this help message and exit
   --project PROJECT     the root directory of markdown files
-  --content CONTENT     content file name
-  --author AUTHOR       author
+  --content CONTENT     content file name, use `_sidebar.md` as default
+  --author AUTHOR       author, use `someone` as default
   --title TITLE         title
-  --language LANGUAGE   language
+  --language LANGUAGE   language, use `zh` as default
   --identifier IDENTIFIER
                         identifier
   --output OUTPUT       output

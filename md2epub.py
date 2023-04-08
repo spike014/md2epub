@@ -17,14 +17,14 @@ def parse_arg():
         dest="content",
         default="_sidebar.md",
         type=str,
-        help="content file name",
+        help="content file name, use `_sidebar.md` as default",
     )
     parser.add_argument(
         "--author",
         dest="author",
         default="someone",
         type=str,
-        help="author",
+        help="author, use `someone` as default",
     )
     parser.add_argument(
         "--title",
@@ -37,7 +37,7 @@ def parse_arg():
         dest="language",
         default="zh",
         type=str,
-        help="language",
+        help="language, use `zh` as default",
     )
     parser.add_argument(
         "--identifier",
