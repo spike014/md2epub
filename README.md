@@ -6,4 +6,6 @@ Like [docsify](https://github.com/docsifyjs/docsify) projects.
 
 TODO:
 
-- support using github.io address to input project
+- using github.io address to input project
+- handle image reference
+- handle link reference

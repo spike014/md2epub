@@ -8,6 +8,7 @@ def add_items(book, content, options):
         html_file_name = get_html_file_name(context['file'])
         chapter = get_chapter(context, options, title)
         book.add_item(chapter)
+        print(f'added chapter {title}')
         child_items = []
         
         for child_title, child_context in context['children'].items(): 
@@ -23,6 +24,32 @@ def add_items(book, content, options):
                 child_items
               )
         )
+
+
+def add_itemsV2(book, content, options, level):
+    items = []
+
+    for title, context in content.items():
+        html_file_name = get_html_file_name(context['file'])
+        chapter = get_chapter(context, options, title)
+        book.add_item(chapter)
+        items.append(chapter)
+        print(f'added chapter {title}')
+        child_items = []
+
+        if context['children']:
+            child_items = add_itemsV2(book, context['children'], options, level+1)
+
+        book.spine.append(chapter)
+        if level == 0:
+            book.toc.append(
+                (
+                    epub.Link(html_file_name, title, title),
+                    child_items
+                )
+            )
+    
+    return items
 
 
 def get_chapter(context, options, title):

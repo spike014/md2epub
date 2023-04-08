@@ -25,6 +25,6 @@ def convert_to_epub(content, options):
     )
     book.add_item(epub.EpubNav())
     
-    CHAPTER.add_items(book, content, options)
+    CHAPTER.add_itemsV2(book, content, options, 0)
 
     epub.write_epub(options.output, book, {})
